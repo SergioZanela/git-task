@@ -1,0 +1,121 @@
+Create an empty folder called git-task.
+● Open your terminal and then change the directory (cd) to your newly created folder. - DONE
+
+● Enter the git init command to initialise your new repository. - DONE
+
+● Enter the git status command and make a note of what you see. You should have a clean working directory. - DONE
+"C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)"
+
+● Create a new code file in the git-task folder called hello_world and write a program that prints out the message “Hello World!”
+i. e.g. hello_world.py or hello_world.js - DONE
+
+● Run the git status command again. You should now see that your hello_world fi le is untracked. -DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello_world.py
+        notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Enter the git add command followed by hello_world.py or hello_world.js to start tracking your new file.
+
+● Once again, run the git status command. You should now see that your hello_world fi le is tracked and staged to be committed. - DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes.txt
+
+● Now that it is tracked, let us change the hello_world fi le. Change the message printed out by the program to “Git is awesome!” - DONE
+
+● Run git status again. You should see that hello_world appears under a section called “Changes not staged for commit”. This means that the fi le is tracked but has been modifi ed and not yet staged. -DONE 
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes.txt
+
+● To stage your fi le, simply run git add again. - DONE
+
+● If you run git status again, you should see that it is once again staged for your next commit. - DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes.txt
+● You can now commit your changes by running the git commit -m command. Remember to enter a suitable commit message after the -m switch. - DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes.txt
+
+
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git commit -m "hello world to git is awesome hello_world.py"
+[master (root-commit) 2001a75] hello world to git is awesome hello_world.py
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.py
+
+● Running the git status command should show a clean working directory once again. - DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git status
+On branch master
+nothing to commit, working tree clean
+
+● Now run the git log command. You should see your commit listed. - DONE
+C:\Users\raafa\Desktop\studies\classes PDF\LEVEL 1 - Python for software engeneering\M03T09 - Version Control and Git Basics\git-task>git log
+commit 4c1bc2598dcba3d881e869b3621081ea6962ea4d (HEAD -> master)
+Author: SergioZanela <sergiozanela18@gmail.com>
+Date:   Sat Nov 1 22:08:07 2025 +1100
+
+    notes for self notes.txt
+
+commit 2001a756ff22f53da4487e6105ce3d662d351714
+Author: SergioZanela <sergiozanela18@gmail.com>
+Date:   Sat Nov 1 22:06:55 2025 +1100
+
+    hello world to git is awesome hello_world.py
+
+● Take a screenshot of the output, name the image file gitlog, and upload it to the task folder. - DONE
